@@ -1,0 +1,314 @@
+/*
+Theme Name: Paper Planes
+Theme URI: localhost/projectpaperplanes
+Descripton: Website voor project
+Version: 1
+Author: Thieme Luisman
+Tags: Paperplanes, paper, planes, vliegtuigen, show
+*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	max-width: 100%;
+	height: 100%;
+	background: url("http://localhost/planes/wp-content/uploads/2017/06/noods.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation / Header */
+.header {
+	background: white;
+	width: 100%;
+	height: 14%;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	border-bottom: 2px solid black;
+}
+
+.koptekst h1{
+	margin-left: 40px;
+	font-size: 30px;
+	color: #39393a;
+}
+
+/* Navigation */
+.nav ul{
+	list-style-type: none;
+	text-align: left;
+}
+
+.nav li {
+	display: inline;
+	margin-right:  10px;
+}
+
+.nav a {
+	text-decoration: none;
+	color: grey;
+	font-weight: bold;
+}
+
+.nav a:hover{
+	color: #ff9b28;
+}
+
+.nav {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+/* Logo */
+.logoPaper {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: auto;
+	right: 3%;
+	background-color: #c9c9c9;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+}
+
+/* Pagina content */
+.pagina {
+	padding-top: 30px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+.page1 h1, .page2 h1, .page3 h1, .page4 h1 {
+	font-size: 35px;
+}
+
+/* Page 1 */
+.page1 {
+	background: white;
+	border: 2px solid black;
+	display: block;
+	overflow-y: scroll;
+	height: 100%;
+}
+
+.page1box {
+	padding-top: 0px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	width: 250px;	
+}
+.fotoHoofdPagina {
+	position: absolute;
+	width: 250px;
+	margin-left: 350px;
+	top: 35%;
+	height: auto;
+	border: 2px solid black;
+	background: black;
+}
+
+.page1 h1 {
+	padding-left: 30px;
+}
+
+/* Page 2 */
+.page2 {
+	background: white;
+	border: 2px solid black;
+	margin-top: 50px
+	width: 100%;
+	margin-top: 50px;
+}
+
+.slider {
+	height: 400px;
+	overflow: hidden;
+}
+
+.page2 h1 {
+	text-align: center;
+}
+
+.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10 {
+  position: absolute;
+  height: 400px;
+  margin-top: 200px;
+  width: 87.6%;
+  text-align: center;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slide1 {
+  background: url(media/slideshow/1.jpeg)no-repeat center;
+  background-size: cover;
+  animation:fade 10s infinite;
+  -webkit-animation:fade 10s infinite;
+} 
+
+.slide2 {
+  background: url(media/slideshow/2.jpeg)no-repeat center;
+   background-size: cover;
+  animation:fade2 10s infinite;
+-webkit-animation:fade2 10s infinite;
+}
+
+.slide3 {
+    background: url(media/slideshow/3.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide4 {
+    background: url(media/slideshow/4.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide5 {
+    background: url(media/slideshow/5.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide6 {
+    background: url(media/slideshow/6.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide7 {
+    background: url(media/slideshow/7.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide8 {
+    background: url(media/slideshow/8.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide3 {
+    background: url(media/slideshow/9.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+.slide3 {
+    background: url(media/slideshow/10.jpeg)no-repeat center;
+    background-size: cover;
+    animation:fade3 8s infinite;
+	-webkit-animation:fade3 10s infinite;
+}
+
+}
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  33.333% { opacity: 1}
+  66.666% { opacity: 0 }
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  33.333% { opacity: 0}
+  66.666% { opacity: 1}
+  100% { opacity: 0}
+}
+
+/* Page 3 */
+.page3 {
+	background: #fcfcfc;
+	border: 2px solid black;
+	margin-top: 50px;
+	height: 650px;
+	margin-bottom: 40px;
+}
+
+.page3 h1 {
+	text-align: center;
+}
+
+.agenda{
+	padding-bottom: 20px;
+	min-width: 20%;
+	text-align: center;
+}
+
+/* Page 4 */
+.page4 {
+	background: white;
+	position: absolute;
+	border-top: 2px solid black;
+	left: 0px;
+	width: 100%;
+	z-index: 1;
+	padding-bottom: 45px;
+	overflow-x: hidden;
+}
+
+.page4 h1 {
+	text-align: center;
+}
+
+.media{
+	margin-left: 30px;
+	float: left;
+	width: 100%;
+}
+
+.footerli ul{
+	position: absolute;	
+	float: right;
+	z-index: 1;
+	margin-left: 22%;
+	font-weight: bold;
+	margin-top: 0px;
+}
+
+.footerli li{
+	list-style-type: none;
+	padding: 5px;
+}
+
+@media (max-width: 750px) 
+{
+    .logoPaper
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 650px) 
+{
+    .fotoHoofdPagina
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 950px) 
+{
+    .footerli li
+    {
+        padding: 0px;
+    }
+}

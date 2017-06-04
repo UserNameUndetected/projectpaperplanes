@@ -1,0 +1,481 @@
+/*
+Theme Name: Paper Planes
+Theme URI: localhost/projectpaperplanes
+Descripton: Website voor project
+Version: 1
+Author: Thieme Luisman
+Tags: Paperplanes, paper, planes, vliegtuigen, show
+*/
+
+body, html, div, header, nav, ul, li, a, section, h1, h2, h3, h4, h5, h6, p, img{
+    margin: 0;
+    padding: 0;
+}
+
+html, body header {
+    width: 100%;
+}
+
+body {
+  	background: url("http://localhost/planes/wp-content/uploads/2017/06/noods.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+	background-size: cover;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+
+	.header { 
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		left: 0%;
+		background-color: white;
+		border-bottom: 1px solid black;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+
+	.header h1 {
+		font-size: 2em;
+		color: #282828;
+		padding-left: 18px;
+		background-color: #ededed;
+		font-weight: 900;
+		text-align: center;
+	}
+
+	.nav li {
+		display:inline-block;
+		margin-right: 12px;
+		margin-top: 10px;
+	}
+
+	@media screen and (width: 320px) {
+		.nav li {
+			font-size: 0.8em
+		}
+	}
+
+	.nav a {
+		text-decoration: none;
+		color: #828282;
+		font-weight: bold;
+		float: left;
+		font-size: 1em;
+	}
+
+	.nav a:hover {
+		color: orange;
+	}
+
+	@media screen and (max-width: 768px) {
+		.logoPaper {
+			display: none;
+		}
+	}
+
+	/* Pagina 1 Start */
+	.page1 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+	}
+
+	.page1 h2 {
+		text-align: center;
+		padding-top: 10px;
+		background-color: #ededed;
+		padding-bottom: 10px;
+	}
+
+	.page1box {
+		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-left: 10px;
+		padding-right: 10px;
+		width: 95%;
+	}
+
+	/* Pagina 2  Foto*/
+	.page2 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		height: 375px;
+	}
+
+	.page2 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	@media screen and (max-width: 768px) {
+		.fotoHoofdPagina {
+			display: none;
+		}
+	}
+
+	.slider {
+		height: 300px;
+		overflow: hidden;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		z-index: 1;
+	}
+
+	/* Page 3, Agenda */
+	.page3 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		height: 400px;
+	}
+
+	.page3 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	/* Page 4 Contact */
+	.page4 {
+		background-color: white;
+		border-top: 1px solid black;
+		margin-top: 20px;
+	}
+
+	.page4 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.media {
+		float: left;
+		padding-left: 20px;
+		position: absolute;
+	}
+
+	.media ul {
+		list-style-type: none;
+	}
+
+	.footerli {
+		position: absolute;
+		left: 30%;
+		margin-top: 10px;
+	}
+
+	.footerli ul {
+		list-style-type: none;
+	}
+}
+
+/* WEBSITE DESKTOP */
+@media screen and (min-width: 769px) {
+	.header { 
+		width: 100%;
+		height: 100%;
+		top: 0%;
+		left: 0%;
+		background-color: white;
+		border-bottom: 2px solid black;
+		margin-bottom: 20px;
+	}
+
+	.header h1 {
+		font-size: 2.5em;
+		color: #282828;
+		font-weight: 900;
+	}
+
+	.logoPaper {
+		height: 12%;
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+		width: auto;
+		position: absolute;
+		top: 0;
+		right: 5%;
+		background-color: lightgrey;
+		padding-left: 1px solid black;
+		padding-right: 1px solid black;
+	}
+
+	.logoPaper img {
+		height: 100%;
+		width: auto;
+	}
+
+	.nav li {
+		display:inline-block;
+		margin-right: 8px;
+		margin-top: 10px;
+	}
+
+	@media screen and (width: 320px) {
+		.nav li {
+			font-size: 0.8em
+		}
+	}
+
+	.nav a {
+		text-decoration: none;
+		color: #828282;
+		font-weight: bold;
+		float: left;
+		font-size: 1em;
+		padding-bottom: 0.2em;
+	}
+
+	.nav a:hover {
+		color: orange;
+	}
+
+	@media screen and (max-width: 768px) {
+		.logoPaper {
+			display: none;
+		}
+	}
+
+	/* Pagina 1 Start */
+	.page1 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+	}
+
+	.page1 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.page1box {
+		padding-bottom: 20px;
+		padding-top: 20px;
+		padding-left: 20px;
+		padding-right: 10px;
+		width: 40%;
+		height: 400px;
+	}
+
+	.fotoHoofdPagina {
+		left: 50%;
+		top: 24%;
+		position: absolute;
+	}
+
+	/* Pagina 2  Foto*/
+	.page2 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		height: 375px;
+	}
+
+	.page2 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	@media screen and (max-width: 768px) {
+		.fotoHoofdPagina {
+			display: none;
+		}
+	}
+
+	.slider {
+		height: 300px;
+		overflow: hidden;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+	}
+
+	.slide1, .slide2, .slide3, .slide4, .slide5, .slide6, .slide7, .slide8, .slide9, .slide10 {
+	  position: absolute;
+	  height: 300px;
+	  margin-top: 150px;
+	  width: 100%;
+	  text-align: center;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+
+	/* Page 3, Agenda */
+	.page3 {
+		background-color: white;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		margin-bottom: 20px;
+		height: 400px;
+	}
+
+	.page3 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	/* Page 4 Contact */
+	.page4 {
+		background-color: white;
+		border-top: 1px solid black;
+		margin-top: 20px;
+	}
+
+	.page4 h2 {
+		text-align: center;
+		padding-bottom: 10px;
+		padding-top: 10px;
+	}
+
+	.media {
+		float: left;
+		padding-left: 20px;
+		position: absolute;
+	}
+
+	.media ul {
+		list-style-type: none;
+	}
+
+	.footerli {
+		position: absolute;
+		left: 30%;
+		margin-top: 10px;
+	}
+
+	.footerli ul {
+		list-style-type: none;
+	}
+}
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+.tribe-list-widget a {
+	text-decoration: none;
+}
+
+/* Slider images */
+	.slide1 {
+	  background: url(media/slideshow/1.jpeg)no-repeat center;
+	  background-size: cover;
+	  animation:fade 10s infinite;
+	  -webkit-animation:fade 10s infinite;
+	} 
+
+	.slide2 {
+	  background: url(media/slideshow/2.jpeg)no-repeat center;
+	   background-size: cover;
+	  animation:fade2 10s infinite;
+	-webkit-animation:fade2 10s infinite;
+	}
+
+	.slide3 {
+	    background: url(media/slideshow/3.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	.slide4 {
+	    background: url(media/slideshow/4.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	.slide5 {
+	    background: url(media/slideshow/5.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	.slide6 {
+	    background: url(media/slideshow/6.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	.slide7 {
+	    background: url(media/slideshow/7.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	.slide8 {
+	    background: url(media/slideshow/8.jpeg)no-repeat center;
+	    background-size: cover;
+	    animation:fade3 8s infinite;
+		-webkit-animation:fade3 10s infinite;
+	}
+
+	@keyframes fade
+	{
+	  0%   {opacity:1}
+	  33.333% { opacity: 0}
+	  66.666% { opacity: 0}
+	  100% { opacity: 1}
+	}
+	@keyframes fade2
+	{
+	  0%   {opacity:0}
+	  33.333% { opacity: 1}
+	  66.666% { opacity: 0 }
+	  100% { opacity: 0}
+	}
+	@keyframes fade3
+	{
+	  0%   {opacity:0}
+	  33.333% { opacity: 0}
+	  66.666% { opacity: 1}
+	  100% { opacity: 0}
+	}
